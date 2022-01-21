@@ -1,0 +1,39 @@
+h1,
+h2,
+h3 {
+	font-family: 'Josefin Sans', sans-serif !important;
+}
+
+.loopstudios-logo {
+	width: 70%;
+
+	@include breakpoint-up('large') {
+		width: 100%;
+	}
+}
+
+.hero-section {
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+		url('../images/mobile/image-hero.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	@include breakpoint-up('medium') {
+		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+			url('../images/desktop/image-hero.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+.interactive-text {
+	text-align: center;
+	@include breakpoint-up('large') {
+		position: absolute;
+		top: 37%;
+		left: 51%;
+		padding-top: 5rem !important;
+		padding-left: 5rem !important;
+		text-align: left !important;
+	}
+}
