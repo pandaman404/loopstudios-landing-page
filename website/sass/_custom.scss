@@ -30,3 +30,18 @@ $display-font-sizes: (
 $secondary: hsl(0, 0%, 0%);
 $light: hsl(0, 0%, 55%);
 $dark: hsl(0, 0%, 41%);
+
+$utilities: (
+	'width': (
+		property: width,
+		class: w,
+		values: (
+			25: 25%,
+			50: 50%,
+			75: 75%,
+			100: 100%,
+			auto: auto,
+			logo: 12rem,
+		),
+	),
+);

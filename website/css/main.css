@@ -7421,6 +7421,10 @@ fieldset:disabled .btn {
   width: auto !important;
 }
 
+.w-logo {
+  width: 12rem !important;
+}
+
 .mw-100 {
   max-width: 100% !important;
 }
@@ -12842,6 +12846,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 
 .interactive-text {
   text-align: center;
+  transition: all 0.2s ease-in-out;
 }
 
 @media (min-width: 62em) {
@@ -12984,11 +12989,27 @@ h1, .h1, h2, .h2, h3, .h3 {
   background-color: black;
 }
 
+@media (min-width: 48em) {
+  .see-all {
+    top: 95%;
+  }
+}
+
 @media (min-width: 62em) {
   .see-all {
     top: 0;
     right: 0%;
     transform: translateX(0%);
+  }
+}
+
+.footer {
+  height: 30rem;
+}
+
+@media (min-width: 48em) {
+  .footer {
+    height: 12rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

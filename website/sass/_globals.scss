@@ -28,6 +28,8 @@ h3 {
 
 .interactive-text {
 	text-align: center;
+	transition: all 0.2s ease-in-out;
+
 	@include breakpoint-up('large') {
 		position: absolute;
 		top: 38%;
@@ -145,9 +147,21 @@ h3 {
 		background-color: $secondary;
 	}
 
+	@include breakpoint-up('medium') {
+		top: 95%;
+	}
+
 	@include breakpoint-up('large') {
 		top: 0;
 		right: 0%;
 		transform: translateX(0%);
+	}
+}
+
+.footer {
+	height: 30rem;
+
+	@include breakpoint-up('medium') {
+		height: 12rem;
 	}
 }
